@@ -30,13 +30,33 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Inicio"),
-      ),
-      body: const Center(
-        child: Text("My first app created with Flutter."),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text("Inicio"),
+        ),
+        body: ListView(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              child: Image.network(
+                  "https://uploads-ssl.webflow.com/5f841209f4e71b2d70034471/60bb4a2e143f632da3e56aea_Flutter%20app%20development%20(2).png"),
+            ),
+            Container(
+              padding: const EdgeInsets.all(20),
+              child: Image.network(
+                  "https://cdn.sanity.io/images/ay6gmb6r/production/52566e987046623a25e2f40a11fa99bbd9f4d4d2-2240x1260.png"),
+            ),
+            Container(
+              padding: const EdgeInsets.all(20),
+              child: Image.network(
+                  "https://baturamobile.com/wp-content/uploads/2022/06/flutter-vs-react-native.jpeg"),
+            ),
+            Container(
+              padding: const EdgeInsets.all(20),
+              child: Image.network(
+                  "https://1.bp.blogspot.com/-ak_aEW48mmA/XNCDH1UYfaI/AAAAAAAAHeg/NUhgwcoZX2Ei7exfQreLRSmOfPtxdCReQCLcBGAs/s1600/image2.png"),
+            ),
+          ],
+        ));
   }
 }
 
